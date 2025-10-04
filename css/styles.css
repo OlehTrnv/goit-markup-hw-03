@@ -1,43 +1,70 @@
+/*common*/
+*{
+  margin: 0;
+  padding: 0;
+}
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: 2%;
+  letter-spacing: 0.02em;
   color: #434455;
   background-color: #ffffff;
+}
+h1, h2, h3, h4, h5, h6, p{
+  padding: 0;
+  margin: 0;
 }
 a {
   text-decoration: none;
   color: currentColor;
 }
-ul {
+img{
+  display: block;
+}
+ul, ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
-/* Header section */
-.nav-item {
-  color: #2e2f42;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  font-size: 16px;
-  line-height: 1.5;
-}
-.nav-item:hover,
-.nav-item:focus {
-  color: #404bbf;
-}
-.address-section {
-  font-style: normal;
+.container{
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15;
 }
 
-.contacts-item {
-  color: #434455;
-  letter-spacing: 0.02em;
+.visually-hidden{
+  position: absolute;
+ width: 1px;
+ height: 1px;
+ margin: -1px;
+ border: 0;
+ padding: 0;
+ white-space: nowrap;
+ clip-path: inset(100%);
+ clip: rect(0 0 0 0);
+ overflow: hidden;
 }
-.contacts-item:hover,
-.contacts-item:focus {
-  color: #404bbf;
+ .section{
+  padding-top: 120px;
+  padding-bottom: 120px;
+ }
+/* Header section */
+.header{
+  border-bottom: 1px solid #e7e9fc;
 }
-.webstudio-logo {
+.header-container{
+  display: flex;
+  align-items: center;
+}
+.header-nav{
+  display: flex;
+  align-items: center;
+}
+.header{
+  padding: 24px 0;
+}
+.logo {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
   line-height: 1.17;
@@ -46,23 +73,66 @@ ul {
   font-size: 18px;
   text-transform: uppercase;
 }
-.logo-part-header {
+.header-logo {
+  align-items: center;
+  display: flex;
+  margin-right: 76px;
+}
+.header-nav-list{
+  display: flex;
+  gap: 40px;
+  margin-right: 332px;
+}
+.nav-item-link {
+  color: #2e2f42;
+  font-weight: 500;
+  padding: 24px 0;
+}
+.nav-item-link:hover,
+.nav-item-link:focus {
+  color: #404bbf;
+}
+
+.address-section {
+  font-style: normal;
+  display: flex;
+  margin-left: auto;
+}
+.header-contacts{
+  display: flex;
+  gap: 40px;
+}
+.contacts-item {
+  line-height: 150%;
+  color: #434455;
+  letter-spacing: 0.02em;
+  padding: 24px 0;
+}
+.contacts-item:hover,
+.contacts-item:focus {
+  color: #404bbf;
+}
+
+
+.logo-span {
   font-weight: 700;
   font-size: 18px;
   color: #2e2f42;
 }
 
 /* Effective Solutions section */
-.first-section {
+.introduction-section {
   background-color: #2e2f42;
 }
-.effective-solutions {
+.introduction-title {
   color: #ffffff;
   font-weight: bold;
   font-size: 56px;
   letter-spacing: 0.02em;
   line-height: 1.07;
   text-align: center;
+  margin: 0 auto;
+  width: 496px;
 }
 .button-order-service {
   font-weight: 500;
@@ -71,6 +141,10 @@ ul {
   cursor: pointer;
   color: #ffffff;
   background-color: #4d5ae5;
+  margin: 0 auto;
+  display: block;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 .button-order-service:hover,
 .button-order-service:focus {
@@ -109,6 +183,9 @@ ul {
   text-transform: capitalize;
   color: #2e2f42;
 }
+/* .our-portfolio{
+  border-bottom: ;
+} */
 .our-team-member {
   background-color: #ffffff;
   font-weight: 500;
