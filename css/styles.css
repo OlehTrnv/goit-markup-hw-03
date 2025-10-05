@@ -67,10 +67,9 @@ ol {
 .header-nav {
   display: flex;
   align-items: center;
+  margin-right: auto;
 }
-.header {
-  padding: 24px 0;
-}
+
 .logo {
   font-family: "Raleway", sans-serif;
   color: #4d5ae5;
@@ -82,22 +81,19 @@ ol {
 }
 .header-logo {
   align-items: center;
-  display: flex;
+  display: block;
+  padding: 24px 0;
   margin-right: 76px;
 }
 .header-nav-list {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
 }
 .nav-item-link {
   color: #2e2f42;
   font-weight: 500;
   padding: 24px 0;
-}
-.nav-item-link:hover,
-.nav-item-link:focus {
-  color: #404bbf;
+  display: block;
 }
 
 .address-section {
@@ -115,6 +111,9 @@ ol {
   letter-spacing: 0.02em;
   padding: 24px 0;
 }
+
+.nav-item-link:hover,
+.nav-item-link:focus,
 .contacts-item:hover,
 .contacts-item:focus {
   color: #404bbf;
@@ -132,7 +131,6 @@ ol {
   padding: 188px 0 188px;
 }
 .introduction-title {
-  
   font-weight: bold;
   font-size: 56px;
   letter-spacing: 0.02em;
@@ -167,7 +165,7 @@ ol {
   align-items: center;
   gap: 24px;
 }
-.about-us-list-item{
+.about-us-list-item {
   width: calc((100% - 72px) / 4);
 }
 .about-us-item {
@@ -190,9 +188,7 @@ ol {
 .team-section {
   background-color: #f4f4fd;
 }
-.team-container{
-  padding: 32px 0;
-}
+
 .our-team {
   margin-bottom: 72px;
   font-weight: 700;
@@ -202,7 +198,6 @@ ol {
   text-align: center;
   color: var(--navy-blue);
   text-transform: capitalize;
-  
 }
 .our-team-list {
   display: flex;
@@ -222,7 +217,7 @@ ol {
 .our-team-card-text {
   padding: 32px 0px;
 }
-.our-team-member{
+.our-team-member {
   text-align: center;
   margin-bottom: 8px;
 }
@@ -248,7 +243,7 @@ ol {
 /* #endregion */
 
 /* Portfolio section */
-.our-portfolio{
+.our-portfolio {
   margin-bottom: 72px;
 }
 .our-portfolio-item {
@@ -284,7 +279,6 @@ ol {
 .footer-paragraph {
   color: #f4f4fd;
   letter-spacing: 0.02em;
-  margin-top: 16px;
   width: 264px;
 }
 .logo-part-footer {
@@ -292,7 +286,7 @@ ol {
   font-weight: 700;
   font-size: 18px;
 }
-.footer-logo{
+.footer-logo {
   display: inline-block;
-  margin-bottom: 16px
+  margin-bottom: 16px;
 }
